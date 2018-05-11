@@ -1,0 +1,23 @@
+apply plugin: 'scala'
+
+ext {
+    scalaVersion = '2.12.3'
+    scalaMajorVersion = '2.12'
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala']
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['src/test/scala']
+        }
+    }
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:$scalaVersion"
+}

@@ -1,0 +1,12 @@
+plugins {
+  id "gradle-clojure.clojure" version "0.3.1"
+}
+
+ext {
+    groovyVersion = '2.4.10'
+}
+
+dependencies {
+    compile 'org.clojure:clojure:1.8.0'
+    devCompile 'org.clojure:tools.namespace:0.3.0-alpha4'
+}
